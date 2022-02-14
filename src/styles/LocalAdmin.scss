@@ -1,0 +1,27 @@
+.LocalAdmin {
+   background-color: #dddddd;
+   padding: 15px;
+   border-radius: 20px;
+   margin: 15px;
+   & p {
+      font-family: 'Open Sans', sans-serif;
+   }
+   &__Active {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & span {
+         font-family: 'Bebas Neue', cursive;
+         color: green;
+      }
+   }
+   &__notActive {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & span {
+         font-family: 'Bebas Neue', cursive;
+         color: red;
+      }
+   }
+}

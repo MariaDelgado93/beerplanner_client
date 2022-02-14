@@ -1,0 +1,105 @@
+.Auth {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ebba36;
+  color: #ffffff;
+  &__container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebba36;
+  }
+  &__field {
+    display: block;
+    margin-bottom: 15px;
+    max-width: 200px;
+    & label {
+      font-family: 'Bebas Neue', cursive;
+      display: block;
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+    & input {
+      border: none;
+      line-height: 32px;
+      color: #000000;
+      background-color: rgba(255, 255, 255, 0.5);
+      -webkit-border-radius: 10px;
+      border-radius: 7px;
+      padding: 0 10px;
+    }
+
+  }
+  &__field-error{
+    color: red;  
+    font-family: 'Bebas Neue', cursive;
+
+  }
+  &__submit {
+    background-color: #000000;
+    color: #ffffff;
+    width: 100%;
+    border: none;
+    line-height: 32px;
+    border-radius: 7px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+  &__changeForm {
+    font-family: 'Bebas Neue', cursive;
+    line-height: 24px;
+    font-size: 18px;
+  }
+  &__text-button {
+    border: none;
+    font-family: 'Bebas Neue', cursive;
+    line-height: 24px;
+    background-color: transparent;
+    color: #000000;
+    font-size: 18px;
+  }
+  &__link{
+    text-decoration: none;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  &__owner-link {
+    position: absolute;
+    bottom: 0;
+    height: 116px;
+    width: 100%;
+    background-color: #000000;
+    -webkit-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    & p{
+      margin-bottom: 10px;
+    }
+    & button{
+      text-decoration: none;
+      color: #ebba36;
+    }
+
+  }
+  &__owner{
+    background-color: #000000;
+    & .Auth__submit {
+      background-color: #ebba36;
+      color: #000000;
+    }
+    & .Auth__text-button{
+      color: #ebba36;
+    }
+  }
+}

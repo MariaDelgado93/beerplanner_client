@@ -1,0 +1,36 @@
+.Admin__beer {
+   background-color: #dddddd;
+   padding: 15px;
+   width: 100%;
+   border-radius: 20px;
+   box-sizing: border-box;
+   margin: 15px;
+   display: flex;
+}
+
+.BeerAdmin {
+   &__image {
+      max-width: 50px;
+      margin-right: 15px;
+      & img {
+         width: 100%;
+         height: auto;
+      }
+   }
+   &__sheet {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex: 2;
+   }
+   &__field {
+      margin-bottom: 10px;
+      & label {
+         width: 100%;
+         display: block;
+      }
+      & input {
+         margin-top: 8px;
+      }
+   }
+}

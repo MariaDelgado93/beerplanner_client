@@ -1,0 +1,56 @@
+.Local {
+  background-color: #dedede;
+  border-radius: 30px;
+  overflow: hidden;
+  width: calc(50% - 10px);
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  &__image {
+    max-height: 150px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    & img {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+    & button {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      color: #ebba36;
+    }
+  }
+  &__sheet {
+    padding: 15px 15px 10px 15px;
+    flex: 2;
+  }
+  &__header{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__direction {
+    margin: 8px 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+  &__location {
+    color: #616161;
+    margin: 8px 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.8em;
+  }
+  &__name {
+    margin: 0;
+    & a {
+      color: #000000;
+      text-decoration: none;
+    }
+  }
+  &__type img {
+    height: 50px;
+    width: 50px;
+  }
+}

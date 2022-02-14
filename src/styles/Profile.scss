@@ -1,0 +1,50 @@
+.Profile {
+   &__no-session {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100%;
+      & a {
+         text-decoration: none;
+         font-family: 'Bebas Neue', cursive;
+         line-height: 32px;
+         color: #ffffff;
+         background-color: #ebba36;
+         display: block;
+         border-radius: 10px;
+         font-size: 18px;
+         padding: 0 20px;
+      }
+   }
+   &__owner {
+      &-local {
+         width: 100%;
+         background-color: #dddddd;
+         border-radius: 20px;
+         padding: 20px;
+         box-sizing: border-box;
+         margin-bottom: 15px;
+      }
+   }
+   &__favouriteBeers {
+      display: flex;
+      flex-wrap: wrap;
+   }
+   &__favouriteLocals {
+      padding: 15px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+   &__admin {
+      padding: 3px;
+   }
+}
+
+.OwnerLocal {
+   &__title {
+      margin-top: 0;
+   }
+}

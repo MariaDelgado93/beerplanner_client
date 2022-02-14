@@ -1,0 +1,31 @@
+.BeerList{
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__beer {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.Beer {
+  &__image {
+    max-height: 100px;
+    z-index: 100;
+  }
+  &__sheet {
+    background-color: #dddddd;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    margin-top: -30px;
+    z-index: 99;
+    border-radius: 20px;
+    flex: 2;
+  }
+}

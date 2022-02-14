@@ -1,0 +1,41 @@
+.LocalPage {
+  height: calc(100vh - 116px);
+  overflow: scroll;
+  &__image {
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    & img {
+      width: 100%;
+      height: auto;
+      margin: 0;
+    }
+
+    & button {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      color: #ebba36;
+    }
+    
+  }
+  &__direction{
+    font-family: 'Open Sans', sans-serif;
+  }
+  &__header{
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+  }
+  &__content{
+    padding: 20px;
+    box-sizing: border-box;
+}
+  &__type img {
+    height: 80px;
+    width: 80px;
+  }
+}

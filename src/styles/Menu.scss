@@ -1,0 +1,29 @@
+.Menu {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  background-color: #000000;
+  color: #ffffff;
+  width: 100%;
+  padding: 30px 0;
+  justify-content: space-around;
+  -webkit-border-radius: 50px 50px 0 0;
+  border-radius: 50px 50px 0 0;
+  z-index: 997;
+  &__link {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    & svg{
+      margin-bottom: 5px;
+    }
+  }
+  &__icon {
+    height: 32px;
+    width: 32px !important;
+  }
+}

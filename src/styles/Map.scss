@@ -1,0 +1,43 @@
+.Map {
+  min-height: 100vh;
+}
+.gm-bundled-control-on-bottom {
+  display: none;
+}
+
+.gm-style {
+  & > div:first-child {
+    & > div:nth-child(3) {
+      & > div:first-child {
+        & > div:nth-child(3) {
+          & > div:first-child {
+            pointer-events: none;
+            & img {
+              display: none !important;
+              position: relative !important;
+              opacity: 0 !important;
+              width: 0 !important;
+              height: 0 !important;
+            }
+          }
+          & > div:nth-child(2) {
+            pointer-events: none;
+            & img {
+              display: none !important;
+              position: relative !important;
+              opacity: 0 !important;
+              width: 0 !important;
+              height: 0 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 480px) {
+  .gm-bundled-control-on-bottom {
+    display: block;
+    bottom: 185px !important;
+  }
+}

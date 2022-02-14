@@ -1,0 +1,33 @@
+.Navbar {
+  padding: 15px;
+  background-color: #ebba36;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  -webkit-border-radius: 0 0 50px 50px;
+  border-radius: 0 0 50px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+  &__logo img {
+    max-height: 80px;
+  }
+  &__menu {
+    & a {
+      color: #000000;
+    }
+  }
+  &__link{
+    margin-right: 15px !important;
+    &:last-child{
+        margin-right: 0 !important;
+    }
+  }
+  &__icon{
+    height: 32px;
+    width: 32px !important;
+  }
+}
